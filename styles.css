@@ -1,0 +1,204 @@
+body {
+    background: #ccc;
+    transition: all 1s;
+    min-width: 600px;
+    padding-top: 30px;
+  }
+  progress {
+    float: right;
+    clear: both;
+    width: 160px;  
+    margin: 0 0 100px 100%;
+  }
+  progress:before {
+    font-family: "Finger Paint";
+    text-shadow: 0 1px 0 white;
+    font-style: normal;
+    font-size: 13px;
+    color: #222;
+    content: "Progress:";
+    position: relative;
+    left: -70px; bottom: 3px;
+  }
+  p {
+    position: fixed;
+    bottom: 10px;
+    right: 40px;
+    font-family: "Finger Paint";
+    font-size: 13px;
+    cursor: pointer;
+  }
+  p:after {
+    position: fixed;
+    bottom: 50px;
+    right: 40px;
+    content: "rafaelcastrocouto inspired by Doodle God";
+    opacity: 0;
+    transition: all 0.5s;
+  }
+  p:hover:after {
+    opacity: 1;
+  }
+  i { 
+    width: 64px; height: 64px; 
+    display: inline-block; 
+    border-radius: 50%;  
+    margin: 20px 80px 20px 0;
+    background: #bbb;
+    background-size: cover;
+    box-shadow: 0 0 12px white,
+      0 -3px 6px rgba(255,255,255,0.5) inset, 
+      0 -18px 24px black inset;
+    position: relative; 
+    top: 0; left: 0;
+    cursor: pointer;
+    transition: all 0.4s;
+  }
+  i:hover {
+    top: -5px;
+    box-shadow: 0 0 14px white,
+      0 -3px 12px rgba(255,255,255,0.5) inset, 
+      0 -18px 24px black inset;
+  }
+  i:after {
+    font-family: "Finger Paint";
+    font-style: normal;
+    font-size: 18px;
+    color: #222;
+    text-shadow: 0 1px 0 white;
+    width: 2px; height: 2px; 
+    content: attr(title); display : block;
+    border-radius: 50%;
+    background: transparent;
+    margin: 0 auto; position: relative; 
+    top: 12px; left: 42px;
+    box-shadow: -42px -6px 6px 6px rgba(255,255,255,0.5);
+    transition: all 0.5s;
+  }
+  i.fusion:after {
+    opacity: 0;
+  }
+  i.fusion.mid:after {
+    opacity: 1;
+  }
+  i:hover:after {
+    box-shadow: -42px -5px 6px 8px rgba(255,255,255,0.6);
+  }
+  i:before {
+    width: 42px; height: 6px; 
+    content: ""; display : block; 
+    border-radius: 50%;
+    background: transparent;
+    margin: 0 auto; position: relative; top: 50px;
+    box-shadow: 0 20px 12px 4px rgba(0,0,0,0.8); 
+    transition: all 0.5s;
+  }
+  i:hover:before {
+    top: 60px;
+    box-shadow: 0 16px 12px 4px rgba(0,0,0,0.5);
+  }
+  i.mid:before {
+    box-shadow: none;
+  }
+  
+  /*ELEMENTS*/
+  .earth { 
+    background-image: url(http://cmapspublic2.ihmc.us/rid%3D1H6V3SVPS-K8MH9X-JWX/ground.jpg); 
+  }
+  .fire {
+    background-image: url(http://www.local10.com/image/view/-/92064/medRes/2/-/maxh/360/maxw/640/-/14gsofdz/-/fire-jpg.jpg);
+  }
+  .water {
+    background-image: url(http://userserve-ak.last.fm/serve/64s/84692391.jpg);
+  }
+  .air {
+    background-image: url(http://static.freepik.com/fotos-gratis/sky_2764971.jpg);
+  }
+  .lava {
+     background-image: url(http://www.mocap-dancer.com/worlds/imvu/MDT/MDT-site-pictures/MDT-Extrater-furniture-rock8-sm.jpg);
+  }
+  .wind {
+    background-image: url(http://lh5.ggpht.com/3uiy78WmwYyKCeh-82n2R87GwGBbUOV2ekjQKmmtRYgi0CBqthoqRVnI9u-jnxxs5LTbcSyrTVEMBL612bihwCcj=s64-c);
+  }
+  .dust {
+    background-image: url(http://wiki.guildwars2.com/images/c/c5/Burning_Ember.png);
+  }
+  .sky {
+    background-image: url(http://www.jazz2online.com/jj2plus/textures/corruptedsanctuary-thumb.png)
+  }
+  .energy {
+    background-image: url(http://www.hiveworkshop.com/forums/resource_images/11/icons_10329_pas.jpg);
+  }
+  .storm {
+    background-image: url(http://hydra-media.cursecdn.com/dota2.gamepedia.com/thumb/3/3c/Eye_of_the_Storm_icon.png/64px-Eye_of_the_Storm_icon.png)
+  }
+  .electricity {
+    background-image: url(https://2.bp.blogspot.com/-BAtKVnjzcKk/TphBKH4gsMI/AAAAAAAAAZs/h7EujWRcDDU/s1600/thunder_ball_b.bmp);
+  }
+  .stone {
+    background: url(http://preview.turbosquid.com/Preview/Content_2009_07_14__15_58_39/natural_stone_thumbnail_02.jpg371fcba4-be7a-41e6-80a8-3d2a045c9de0Small.jpg);
+  }
+  .metal {
+    background-image: url(http://preview.turbosquid.com/Preview/2013/04/09__05_21_42/metal_plates_17_00.jpgbe67339f-3e13-4154-813a-b27a8c4ea954Small.jpg);
+  }
+  .ash {
+    background-image: url(http://ww3.hdnux.com/photos/04/03/52/1063574/3/gallery_thumb.jpg);
+  }
+  .coal {
+     background-image: black url(http://hydra-media.cursecdn.com/neverwinter.gamepedia.com/6/62/NW_Coal_Icon.png);
+  }
+  .sand {
+     background-image: url(http://i200.photobucket.com/albums/aa72/Satane123/sand.png);
+  }
+  .steam {
+     background-image: url(http://imageshack.us/scaled/landing/194/parttutimg16.jpg);
+  }
+  .glass {
+     background-image: url(http://tardisbuilders.com/Themes/tardis-builders/images/tworkshop/glass.png);
+  }
+  .grass {
+     background-image: url(http://previewcf.turbosquid.com/Preview/Content_2009_07_15__07_31_20/Grass_09_01.jpge77bb799-787f-4a06-a746-0691b1cd6105Small.jpg);
+  }
+  .clay {
+     background-image: url(https://i.imgur.com/JQucNtR.png);
+  }
+  .brick {
+     background: url(http://i117.photobucket.com/albums/o59/RadleyGH/misa_stonebrick_red.png);
+  }
+  .moss {
+     background-image: url(http://lh6.ggpht.com/NHuwNJm5Rngf5HeCV_xMupsiXsjNE9BI1-9Z5Hipox0jMEewtUYKao5axnlVACp5-1yUCq_h0sZYfQUQxuVEN70=s64-c);
+  }
+  .swamp {
+     background-image: url(http://s.cghub.com/files/Image/016001-017000/16118/633_thumb.jpg);
+  }
+  .life {
+    background-image: url(http://previewcf.turbosquid.com/Preview/Content_2009_07_16__17_01_41/bacteria5.jpg1f2cfe32-b8c8-4f65-9e77-560f98ca8c12Small.jpg);
+  }
+  .reggae {
+    background-image: url(http://userserve-ak.last.fm/serve/64s/85899219.jpg);
+    
+  }
+  .seed {
+    background-image: url(http://slism.com/calorie/foodImages/105017s.jpg);
+  }
+  .tree {
+    background-image: url(http://1-ps.googleusercontent.com/h/www.scrabblewordsolver.com/assets/images/4pics1word/itchmania/64/itchmania_tree1.jpg.pagespeed.ce._hcsAcg6Uw.jpg);
+  }
+  .bob {
+    background-image: url(http://dw.tagoo.ru/pedia/music/1113/photo/small_57c6e40d.jpg);
+  }
+  .weed {
+    background-image: url(http://bestuff.com/images/images_of_stuff/64x64crop/weed-356307.jpg?1362958091);
+  }
+  .mushroom {
+    background-image: url(http://files.softicons.com/download/game-icons/super-mario-icons-by-sandro-pereira/png/64/Mushroom%20-%20Super.png);
+  }
+  .earthquake {
+    background-image: url(http://www.pagepress.org/journals/public/journals/40/cover_article_3959_en_US.jpg);
+  }
+  .wave {
+    background-image: url(https://jigsawparadise.com.au/media/catalog/product/cache/6/thumbnail/64x64/9df78eab33525d08d6e5fb8d27136e95/w/a/wave.jpg);
+  }
+  .light {
+    background-image: url(http://www.mobafire.com/images/ability/lux-finales-funkeln.png);
+  }
